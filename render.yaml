@@ -1,0 +1,20 @@
+# render.yaml — Render deployment blueprint
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: schoolms
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DB_HOST
+        sync: false   # You will fill this in Render dashboard
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_PORT
+        value: "3306"

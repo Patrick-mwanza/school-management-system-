@@ -1,0 +1,33 @@
+# =============================================
+# School Management System - .gitignore
+# =============================================
+
+# PHP config with real credentials (use env vars on Render)
+# config/database.php is committed but uses env variables
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# PHP error logs
+*.log
+error_log
+php_errors.log
+
+# Temp / test files
+init_users.php
+update_admin.php
+test_login.php
+generate_hashes.php
+setup.php
+
+# Windows temp
+*.tmp
+*.temp
